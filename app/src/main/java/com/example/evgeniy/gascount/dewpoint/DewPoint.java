@@ -72,7 +72,9 @@ public class DewPoint {
         analisator2(waterStream);
         analisator2(waterStream);
 
-        return interpolator(waterStream,point1,point2,factorDP1,factorDP2);
+        double result = interpolator(waterStream,point1,point2,factorDP1,factorDP2);
+        clearAll();
+        return result;
     }
     private static int count;
 
@@ -121,5 +123,21 @@ public class DewPoint {
 
     private static double interpolator (double targetY, double Y1, double Y2, double X1, double X2){
         return (X1+(targetY -Y1)*(X2-X1)/(Y2-Y1));
+    }
+
+    private static void clearAll(){
+        factorA1 = 0;
+        factorA2 = 0;
+        factorB1 = 0;
+        factorB2 = 0;
+        factorDP1 = 0;
+        factorDP2 = 0;
+        count = 0;
+        point = 0;
+        point1 = 0;
+        point2 = 0;
+        tempListAB = CorrectionFactors.listAB;
+        tempListDP = CorrectionFactors.listAB;
+
     }
 }
