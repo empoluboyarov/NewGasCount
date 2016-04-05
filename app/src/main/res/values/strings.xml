@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">GasCount</string>
+    <string name="title_activity_main">Калькулятор диспетчера GasCount</string>
+    <string name="title_activity_converter">Конвертер давления</string>
+    <string name="title_activity_dewpoint">Приведение точки росы</string>
+    <string name="title_activity_methodics">Методики расчетов</string>
+    <string name="title_activity_counts">Основные расчеты</string>
+
+
+
+    //ресурсы MainMenuActivity
+    <string name="bt_counts">Основные расчеты</string>
+    <string name="bt_methodics">Методики расчета</string>
+    <string name="bt_pressure">Конвертер давления</string>
+    <string name="bt_dewpoint">Пересчитать точку росы</string>
+
+    //ресурсы DewPointActivity
+
+    <string name="dptext1">Измеренная точка росы</string>
+    <string name="dptext2">Давление</string>
+    <string name="dptext3">Приведенная точка росы \n составляет:</string>
+    <string name="dptext4"></string>
+    <string name="dpbutton">Рассчитать</string>
+
+</resources>
